@@ -1,0 +1,17 @@
+<% include partials/header %>
+
+
+<%images.forEach(function(image){%>
+    
+		<div class="row">
+		  <div class="col-sm-6 col-md-4">
+		    <div class="thumbnail">
+		      <img src="/images/<%= keyword %>/grayscale/<%= image %>" />
+		    </div>
+		  </div>
+		</div>
+
+<% });%>
+
+
+<% include partials/footer%>

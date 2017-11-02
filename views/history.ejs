@@ -1,0 +1,12 @@
+<% include partials/header %>
+
+<div style="margin-top:60px" class="container">
+    
+        <%searchArr.forEach(function(keyword){%>
+        <li><a href="/getimages?keyword=<%= keyword %>"</a><%= keyword %></li>
+    <% });%>
+  
+    
+</div>
+
+<% include partials/footer%>
